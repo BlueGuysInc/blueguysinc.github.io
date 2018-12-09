@@ -1,0 +1,542 @@
+.mod img[tabindex="0"] {
+    cursor: zoom-in;
+}
+.mod img[tabindex="0"]:focus {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    max-width: 93%;
+    max-height: 93%;
+    margin: auto;
+    box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(59,59,59,0.7);
+}
+.mod img[tabindex="0"]:focus,
+.mod img[tabindex="0"]:focus ~ * {
+    pointer-events: none;
+}
+
+
+
+
+
+.mod{
+    border:3px solid;
+    margin:auto;
+    width: 900px;
+    margin-top:15px;
+    padding-bottom:15px;
+    background: gainsboro;
+}
+
+.Description{
+    font-size:20px;
+}
+
+.info{
+    color:white;
+}
+
+.link{
+    font-size:25px;
+    color:blue;
+    text-decoration:none;
+}
+
+.link:hover{
+    text-decoration:underline;
+}
+
+
+#content{
+    width:64%;
+    min-height:207px;
+    border:1px solid;
+    float:left;
+    border-radius:5px;
+    margin-top:40px;
+    margin-left:5px;
+    background: #E6E6E6;
+    margin-right:0px;
+    transition:0.5s;
+}
+
+.codes-cods{
+    margin-left:5px;
+}
+
+
+.download-content{
+    border:1px solid;
+    width: 900px;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-family:monospace;
+}
+
+
+.sa-download{
+    border:1px solid gray;
+    background: white;
+    padding:5px 5px 5px 5px;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:15px;
+    color:black;
+    font-family:sans-serif;
+    display:block;
+    width: 300px;
+    transition:0.3s;
+    border-radius:5%;
+    cursor:pointer;
+}
+
+.sa-download:hover{
+    background:green;
+    border:1px solid green;
+    color:white;
+}
+
+.back{
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    border:3px solid gold;
+    background: gold;
+    padding-left:15px;
+    padding-right:25px;
+    font-size:20px;
+    text-decoration:none;
+    color:black;
+    padding-top:15px;
+    padding-bottom:15px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.back:hover{
+    background: orangered;
+    border:3px solid orangered;
+    transition:0.3s;
+}
+
+.but{
+    float:right;
+}
+
+.codes{
+    text-decoration:none;
+    color:black;
+    font-size:25px;
+    margin-right:25px;
+    border:2px solid;
+    clip-path: polygon(12% 0%, 100% 0%, 75% 100%, 0% 100%);
+    padding-left:33px;
+    padding-right:43px;
+    padding-bottom:5px;
+    padding-top:5px;
+    transition:0.3s;
+    cursor:pointer;
+    display:inline-block;
+}
+
+.mods{
+    text-decoration:none;
+    color:black;
+    font-size:25px;
+    margin-right:25px;
+    border:2px solid;
+    clip-path: polygon(18% 0%, 100% 0%, 75% 100%, 0% 100%);
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:5px;
+    padding-top:5px;
+    transition:0.3s;
+    cursor:pointer;
+    display:inline-block;
+}
+
+.download{
+    text-decoration:none;
+    color:black;
+    font-size:25px;
+    margin-right:25px;
+    border:2px solid;
+    clip-path: polygon(18% 0%, 100% 0%, 75% 100%, 0% 100%);
+    padding-left:23px;
+    padding-right:23px;
+    padding-bottom:5px;
+    padding-top:5px;
+    transition:0.3s;
+    cursor:pointer;
+    display:inline-block;
+}
+
+.codes:hover{
+    color: orangered;
+    transition:0.3s;
+}
+
+.mods:hover{
+    color: orangered;
+    transition:0.3s;
+}
+
+.download:hover{
+    color: orangered;
+    transition:0.3s;
+}
+
+.table{
+    text-align:center;
+    margin-top:45px;
+    margin-bottom:30px;
+}
+
+.fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.slider {
+    max-width: 750px;
+    height: 400px;
+    background: gray 50%/cover no-repeat;
+    transition: 0.3s;
+    border: 2px solid black;
+    margin-top:15px;
+}
+
+.icons {
+    width: 255px;
+    margin: auto;
+}
+
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background: gray 50%/cover no-repeat;
+    margin: 10px;
+    margin-left:5px;
+    cursor: pointer;
+    border: 0.5px solid gray;
+    transition:0.3s;
+}
+
+.img1 {
+    background-image: url('https://tse1.mm.bing.net/th?id=OIP.o_ROBMwVFKjASexDpT6vFQHaEK');
+}
+
+.img2 {
+    background-image: url('https://m.thegtaplace.com/images/sanandreas/screenshots/pc/pc_10.jpg');
+}
+
+.img3 {
+    background-image: url('http://archive.videogamesdaily.com/media/gta_sanandreas_e3/04.jpg');
+}
+.img4 {
+    background-image: url('http://archive.videogamesdaily.com/media/gta_sanandreas_e3/03.jpg');
+}
+.img5 {
+    background-image: url('http://archive.videogamesdaily.com/media/gta_sanandreas_e3/01.jpg');
+}
+
+.icon:hover{
+    box-shadow: 2px 2px 2px;
+    background: gray;
+}
+
+.style{
+    background: lightgray;
+}
+
+
+.menu{
+    border:1px solid;
+    width: 34%;
+    margin-top:40px;
+    margin-left:10px;
+    border-radius:5px;
+    background: #E6E6E6;
+    float:left;
+    min-height:207px;
+}
+
+.info-s{
+    text-decoration:none;
+    color: greenyellow;
+}
+
+.info-s:hover{
+    color:green;
+    transition:0.4s;
+    text-decoration:underline;
+}
+
+.info{
+    margin-bottom:20px;
+    margin-top:20px;
+    font-size:20px;
+}
+
+.pod-menu{
+    font-size:23px;
+    padding-left:7px;
+    padding-top:7px;
+    font-weight: 600;
+    text-decoration:none;
+    color:black;
+    transition:0.3s;
+}
+.pod-menu:hover{
+    background:lightgray;
+    transition:0.3s;
+}
+
+.pod-text{
+    text-decoration:none;
+    color:black;
+    padding-left:7px;
+    padding-top:7px;
+}
+
+.logo{
+    font-size:60px;
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+    text-align:center;
+    width:650px;
+    height:100px;
+    margin:auto;
+    padding-top:20px;
+    margin-top:25px;
+}
+
+
+.text-end{
+    margin-top:25px;
+    font-size:17px;
+    text-align:right;
+    margin-right:5px;
+}
+
+.header1{
+text-decoration:none;
+color:black;
+
+}
+
+
+.BGI-Project{
+    cursor:pointer;
+    margin-right:5px;
+}
+
+.BGI-Project:hover{
+   border:1px solid;
+    transition:0.5s;
+}
+
+footer{
+    background-color: rgba(243, 245, 238, 0.51);
+    position: relative;
+}
+
+body{
+    margin:0;
+    background-image: linear-gradient(45deg, #808080, #E6E6E6);
+}
+
+body *::selection {
+    color: white;
+    background: black;
+}
+
+.buttons {
+    text-align: center;
+    margin-top:65px;
+}
+
+.buttons2{
+    display:inline-block;
+    margin-left:15px;
+}
+
+.button {
+    border: 3px solid;
+    font-size: 24px;
+    color: #1c1a30;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+}
+.button::before,
+.button::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: crimson;
+    top: 0;
+    left: -100%;
+    opacity: .5;
+    transition: .3s;
+    z-index: -1;
+}
+.button::after {
+    opacity: 1;
+    transition-delay: .2s;
+}
+.button:hover {
+    border:3px double crimson;
+    color: white;
+}
+
+.button:hover::before,
+.button:hover::after {
+    left: 0;
+}
+
+.place{
+    border:3px double;
+    background-color: gold;
+    color: #38335d;
+}
+
+.instruction{
+    font-size:17px;
+}
+
+@media screen and (max-width:990px){
+    #content{
+        float:none;
+        width: 100%;
+    }
+    .menu{
+        float:none;
+        width: 100%;
+        text-align:center;
+        margin:auto;
+    }
+    .pod-menu{
+        font-size: 45px;
+    }
+    #content video{
+        width: 100%;
+        height: 100%;
+        margin-left:0;
+    }
+    .button{
+        font-size:45px;
+        width: 400px;
+        height: 100px;
+        padding-top:25px;
+        margin-top:15px;
+        margin-bottom:25px;
+    }
+    .download{
+        font-size:55px;
+        padding-left:35px;
+        padding-right:45px;
+        margin-top:35px;
+    }
+    .codes{
+        font-size:55px;
+        padding-right:55px;
+        margin-top:35px;
+    }
+    .mods{
+        font-size:55px;
+        margin-top:35px;
+    }
+    .text-end{
+        font-size:35px;
+    }
+    .BGI-Project{
+        height: 80px;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+    }
+    .sa-download{
+        font-size:45px;
+        width: 800px;
+        height: 100px;
+        padding-top:40px;
+    }
+    .back{
+        font-size:40px;
+        padding-right:70px;
+        padding-left:40px;
+    }
+    .but{
+        display:block;
+        float:none;
+        margin-top:25px;
+        margin-bottom:25px;
+        margin-left: 750px;
+    }
+    .info{
+        font-size:40px;
+    }
+    .logo{
+        font-size: 120px;
+        padding-bottom:70px;
+        width: 100%;
+    }
+    #content h3{
+        font-size:47px;
+    }
+    .menu img{
+        height: 100px;
+    }
+    #content p{
+        font-size:40px;
+    }
+    .instruction {
+        font-size:45px;
+    }
+    #page1 p, h2{
+             font-size:25px;
+    }
+    #page2 p{
+        font-size:25px;
+    }
+    #page3 p{
+        font-size:25px;
+    }
+    .gnav1{
+        font-size:30px;
+    }
+    .gnav2{
+        font-size:30px;
+    }
+    .gnav3{
+        font-size:30px;
+    }
+    .Description{
+        font-size:30px;
+    }
+    section h1{
+        font-size:35px;
+    }
+    .link{
+        font-size:45px;
+    }
+}
