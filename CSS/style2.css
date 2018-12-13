@@ -6,7 +6,16 @@ body, html {
   margin:0px;
 }
 
-
+/*a{
+  color:white;
+  font-size:30px;
+  text-decoration:none; 
+  transition:0.3s;
+}
+a:hover{
+  color:blue;
+  transition:0.3s;
+}*/
 
 .wrapper {
   width: 100%;
@@ -94,6 +103,7 @@ nav li.currentPage {
     width: calc(100% - 6rem);
     top: 3rem;
     left: 96px;
+    font-size:30px;
   }
 }
 

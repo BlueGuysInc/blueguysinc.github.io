@@ -21,8 +21,10 @@
 }
 
 
-
-
+.opis{
+    font-size:20px;
+    color:#353421;
+}
 
 .mod{
     border:3px solid;
@@ -62,7 +64,17 @@
     margin-left:5px;
     background: #E6E6E6;
     margin-right:0px;
-    transition:0.5s;
+}
+#content2{
+    width:64%;
+    min-height:207px;
+    border:1px solid;
+    float:left;
+    border-radius:5px;
+    margin-top:40px;
+    margin-left:5px;
+    background: #E6E6E6;
+    margin-right:0px;
 }
 
 .codes-cods{
@@ -75,7 +87,8 @@
     width: 900px;
     margin-top:20px;
     margin-bottom:20px;
-    font-family:monospace;
+    background:#dee2e5;
+    font-family:serif;
 }
 
 
@@ -203,7 +216,7 @@
 
 
 .slider {
-    max-width: 750px;
+    width: 750px;
     height: 400px;
     background: gray 50%/cover no-repeat;
     transition: 0.3s;
@@ -247,6 +260,21 @@
 .img5 {
     background-image: url('http://archive.videogamesdaily.com/media/gta_sanandreas_e3/01.jpg');
 }
+.img6{
+    background-image:url('https://img.gta5-mods.com/q95/images/gta-vice-city-loading-screens/43986c-gta-vice-city-sonny-forelli-grand-theft-auto-1920x1200-wallpaper429131.jpg');
+}
+.img7{
+    background-image:url('https://m.thegtaplace.com/images/vicecity/screenshots/pc/screen03.jpg');
+}
+.img8{
+    background-image:url('https://u.kanobu.ru/screenshots/5ee91174-4e12-4ed8-9f0f-60e4fbd73b8b.png');
+}
+.img9{
+    background-image:url('https://m.thegtaplace.com/images/vicecity/screenshots/xbox/full_vc_10.jpg');
+}
+.img10{
+    background-image:url('https://www.gry-online.pl/galeria/galeria_duze3/657387421.jpg');
+}
 
 .icon:hover{
     box-shadow: 2px 2px 2px;
@@ -280,6 +308,11 @@
     text-decoration:underline;
 }
 
+.menu hr{
+    padding:0px;
+    margin:0px;
+}
+
 .info{
     margin-bottom:20px;
     margin-top:20px;
@@ -296,7 +329,7 @@
     transition:0.3s;
 }
 .pod-menu:hover{
-    background:lightgray;
+    background:lightgray!important;
     transition:0.3s;
 }
 
@@ -419,11 +452,13 @@ body *::selection {
 }
 
 .instruction{
-    font-size:17px;
+    font-size:20px;
 }
 
+
 @media screen and (max-width:990px){
-    #content{
+    #content,
+    #content2{
         float:none;
         width: 100%;
     }
@@ -435,6 +470,10 @@ body *::selection {
     }
     .pod-menu{
         font-size: 45px;
+    }
+    .pod-menu:hover{
+        background: lightgray;
+        transition:0.3s;
     }
     #content video{
         width: 100%;
@@ -455,7 +494,6 @@ body *::selection {
         padding-right:65px;
         margin-top:35px;
         margin-right:0px;
-
     }
     .codes{
         font-size:55px;
@@ -484,6 +522,7 @@ body *::selection {
         width: 800px;
         height: 100px;
         padding-top:40px;
+        font-family:monospace;
     }
     .back{
         font-size:40px;
@@ -518,7 +557,7 @@ body *::selection {
         font-size:45px;
     }
     #page1 p, h2{
-             font-size:25px;
+        font-size:25px;
     }
     #page2 p{
         font-size:25px;
@@ -545,6 +584,30 @@ body *::selection {
         font-size:45px;
     }
     .table{
-    margin-bottom:50px;
+        margin-bottom:50px;
     }
+    .opis{
+        font-size:40px;
+    }
+
+    .menu img{
+        height: 100px;
+    }
+    #content2 p{
+        font-size:40px;
+    }
+    #content2 iframe{
+        width: 100%;
+        height: 600px;
+        margin-left:0;
+    } 
+    #content2 h3{
+        font-size:47px;
+    }
+    .slider{
+        width: 100%;
+        height: 600px;
+    }
+
+
 }
