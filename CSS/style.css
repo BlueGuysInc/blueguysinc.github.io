@@ -326,6 +326,7 @@
     text-decoration:none;
     color:black;
     transition:0.3s;
+    cursor:pointer;
 }
 .pod-menu:hover{
     background:lightgray!important;
