@@ -40,8 +40,8 @@ h1 {
 
 nav {
   width: 100%;
-  background: -webkit-linear-gradient(315deg, #fcc274 0%, #eb48a1 100%);
-  background: linear-gradient(135deg, #fcc274 0%, #eb48a1 100%);
+  background: -webkit-linear-gradient(315deg, black 0%, black 100%);
+  background: linear-gradient(35deg, lightgray 0%, gray 100%);
 }
 @media (min-width: 769px) {
   nav {
@@ -94,8 +94,8 @@ nav li.currentPage {
   left: 0;
   border-radius: 0 0 8px 0;
   overflow: hidden;
-  background: -webkit-linear-gradient(315deg, #1c1a30 0%, #38335d 100%);
-  background: linear-gradient(135deg, #1c1a30 0%, #38335d 100%);
+  background: -webkit-linear-gradient(315deg, black 0%, black 100%);
+  background: linear-gradient(135deg, #333333 0%, #5A5454 100%);
 }
 @media (min-width: 769px) {
   #contents {
@@ -114,7 +114,7 @@ article {
   padding: 2rem;
   box-sizing: border-box;
   background: -webkit-linear-gradient(315deg, #38335d 0%, #1c1a30 100%);
-  background: linear-gradient(135deg, #38335d 0%, #1c1a30 100%);
+  background: linear-gradient(135deg, #333333 0%, #5A5454 100%);
   top: 0;
   left: -100%;
 }

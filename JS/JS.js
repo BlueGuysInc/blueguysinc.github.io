@@ -111,17 +111,21 @@ icon10.addEventListener('click', function(e) {
 //function invisiblу
  var cunt = document.getElementById("content");
  var menu = document.getElementById("Menu1");
- var men = document.getElementsByClassName("menu")
+ var men = document.getElementsByClassName("menu");
+ var footer = document.getElementById("footer");
 function viewDiv(){
      cunt2.style.display = "none";
  if(cunt.style.display == "none"){
         cunt.style.display = "block";
         menu.style.background = "lightgray";
-        menu2.style.background = "#E6E6E6";
-        
+        menu2.style.background = "inherit";
+        menu.style.borderRight = "none";
+        menu2.style.borderRight = "1px solid gray";
+        footer.style.margin = "0";
     }  else {
         cunt.style.display = "none";
-         menu.style.background = "#E6E6E6";
+         menu.style.background = "inherit";
+         footer.style.marginTop = "342px";
 };
 };
 
@@ -132,16 +136,17 @@ function viewDiv2(){
  if(cunt2.style.display == "none"){
         cunt2.style.display = "block";
         menu2.style.background = "lightgray";
-        menu.style.background = "#E6E6E6";
-
+        menu.style.background = "inherit";
+        menu2.style.borderRight = "none";
+        menu.style.borderRight = "1px solid gray";
+        footer.style.margin = "0";
     }  else {
         cunt2.style.display = "none";
-        menu2.style.background = "#E6E6E6";
- };
+        menu2.style.background = "inherit";
+        footer.style.marginTop = "342px";
 };
-
-
-
+        
+ };
 
 
 
