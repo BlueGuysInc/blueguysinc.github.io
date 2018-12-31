@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
-    <link rel="shortcut icon" href="Image/PicsArt_11-26-004.18.26.ico" type="image/png">
+    <link rel="shortcut icon" href="https://www.macupdate.com/images/icons256/40044.png" type="image/png">
 	<title>Скачать GTA:Vice City</title>
 </head>
 <body>
@@ -21,26 +21,25 @@
         <div class="download-content">
             <div class="pc-vers">
                 <h1>PC версия</h1>
-                <a href="https://yadi.sk/d/FnFKvK7_i9_Zeg" class="sa-download">Скачать GTA:VS</a><br/>
-              <p class="instruction"> Инструкция:<br/>
-              	Скачать torrent, установить .exe файл.
-              </p>
+                <a href="https://store.steampowered.com/app/12110/Grand_Theft_Auto_Vice_City/?l=russian" class="sa-download">Купить в Steam</a><br/>
+                <a href="https://yadi.sk/d/FnFKvK7_i9_Zeg" class="sa-download">Скачать (16КБ)</a><br/>
                </div>
             <hr/>
              <div class="android-vers">
                 <h1>Android версия</h1>
-                <a href="https://yadi.sk/d/ICD6VPMFP39BlA" class="sa-download">Скачать APK</a><br/>
-                <a href="https://yadi.sk/d/z5XAClOtDzhhhg" class="sa-download">Скачать APK: mod много денег</a><br/>
-                <a href="https://yadi.sk/d/ZK10boBDqqBBpQ" class="sa-download">Скачать Кэш</a><br/>
-                <a href="https://yadi.sk/d/eFXrTptRFi3_Mw" class="sa-download">Скачать Кэш torrent</a><br/>
+                <a href="https://play.google.com/store/apps/details?id=com.rockstargames.gtavc&hl=ru" class="sa-download">Купить в Play Market</a><br/>
+                <a href="https://yadi.sk/d/ICD6VPMFP39BlA" class="sa-download">Скачать APK (10.3МБ)</a><br/>
+                <a href="https://yadi.sk/d/z5XAClOtDzhhhg" class="sa-download">Скачать APK: mod много денег (7.1МБ)</a><br/>
+                <a href="https://yadi.sk/d/ZK10boBDqqBBpQ" class="sa-download">Скачать Кэш (996.2МБ)</a><br/>
+                <a href="https://yadi.sk/d/eFXrTptRFi3_Mw" class="sa-download">Скачать Кэш torrent (19КБ)</a><br/>
                <p class="instruction"> Инструкция:<br/>
                    Разархивировать кэш в папку android/obb/ и установить APK.</p>
             </div>
             <hr/>
              <div class="ios-vers">
                 <h1>IOS версия</h1>
-                <a href="https://yadi.sk/d/aRQTmXD2-HC9Fw" class="sa-download">Скачать ipa</a><br/>
-                <a href="https://yadi.sk/d/5Hu3gbjLOBu7Cg" class="sa-download">Скачать ipa torrent</a><br/>
+                <a href="https://itunes.apple.com/ru/app/grand-theft-auto-vice-city/id578448682?mt=8" class="sa-download">Купить в App Store</a><br/>
+                <a href="https://yadi.sk/d/aRQTmXD2-HC9Fw" class="sa-download">Скачать ipa (911.4МБ)</a><br/>
                 <div class="instruction">Инструкция:<br/>
                   <p> 1. Подключите iPhone к компьютеру. Если это требуется, подтвердите доверенность этому компьютеру.<br/>
                     <br/>
@@ -67,12 +66,32 @@
             </div>
         </div>
     </center>
+             <div class="men">
+          <nav class="men-nav">
+            <a href="https://vk.com/blueguysinc" target="_blank" class="link2">Группа Вконтакте</a>
+            <a href="https://movingmilkshake.github.io/" target="_blank" class="link2">Вселенская мощь</a>
+            <a href="https://tvoyotec.github.io/index.html" target="_blank" class="link2">Blue Guys Phone Manager</a>
+          </nav>
+           <div class="section">
+    <a href="#men" class="menu-btn">
+      <span></span>
+    </a>
+  </div>
+  </div>
     </main>
     <footer>
         <hr/>
-        <p class="text-end">Сайт создан компанией Vietnam</p>
+        <p class="text-end">Сайт создан компанией Vietnam</p> 
         <hr/>
     </footer>
-    <script src="JS/JS.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+     <script src="JS/JS.js"></script>
+    <script>
+$('.menu-btn').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('menu-btn_active');
+  $('.men-nav').toggleClass('men-nav_active');
+});
+</script>
 </body>
 </html>

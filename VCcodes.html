@@ -7,7 +7,7 @@
 
     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="CSS/style2.css">
- <link rel="shortcut icon" href="Image/PicsArt_11-26-004.18.26.ico" type="image/png">
+ <link rel="shortcut icon" href="https://www.macupdate.com/images/icons256/40044.png" type="image/png">
 
 </head>
 <body>
@@ -112,25 +112,36 @@
                         <p></p>
                 </section>
             </article>
-            
+             -->
         </div>
     </div>
 </div>
- -->
-<footer>
-    <hr/>
-    <p class="text-end">Сайт создан компанией Vietnam</p>
-    <hr/>
-</footer>
 
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
-
-<script src="JS/index.js"></script>
-
-<script>
-    setTimeout("alert('используйте CTRL + F для поиска определённого кода')", 100);
+           <div class="men">
+        <nav class="men-nav">
+          <a href="https://vk.com/blueguysinc" target="_blank" class="link2">Группа Вконтакте</a>
+          <a href="https://movingmilkshake.github.io/" target="_blank" class="link2">Вселенская мощь</a>
+          <a href="https://tvoyotec.github.io/index.html" target="_blank" class="link2">Blue Guys Phone Manager</a>
+        </nav>
+         <div class="section">
+  <a href="#men" class="menu-btn">
+    <span></span>
+  </a>
+</div>
+</div>
+    <footer>
+        <hr/>
+        <p class="text-end">Сайт создан компанией Vietnam</p> 
+        <hr/>
+    </footer>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+     <script src="JS/JS.js"></script>
+    <script>setTimeout("alert('используйте CTRL + F для поиска определённого кода')", 100);
+$('.menu-btn').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('menu-btn_active');
+  $('.men-nav').toggleClass('men-nav_active');
+});
 </script>
-
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
-    <link rel="shortcut icon" href="Image/PicsArt_11-26-004.18.26.ico" type="image/png">
+    <link rel="shortcut icon" href="https://seeklogo.com/images/G/grand-theft-auto-san-andreas-logo-358471D1EB-seeklogo.com.png" type="image/png">
     <title>Сскачать GTA:SA</title>
 </head>
 
@@ -22,24 +22,25 @@
         <div class="download-content">
             <div class="pc-vers">
                 <h1>PC версия</h1>
-                <a href="https://yadi.sk/d/qYUFBU0MlB-uzA" class="sa-download">Скачать GTA:SA + SAMP</a><br/>
-               <p class="instruction"> Инструкция:<br/>
-                   Запустить GTASAMPSetup.exe файл.</p>
+                <a href="https://store.steampowered.com/app/12120/Grand_Theft_Auto_San_Andreas/?l=russian" class="sa-download">Купить в Steam</a><br/>
+                <a href="https://yadi.sk/d/qYUFBU0MlB-uzA" class="sa-download">Скачать GTA:SA + SAMP (1.34ГБ)</a><br/>
             </div>
             <hr/>
             <div class="android-vers">
                 <h1>Android версия</h1>
-                <a href="https://yadi.sk/d/-EZmtFmtfxttRQ" class="sa-download">Скачать APK</a><br/>
-                <a href="https://yadi.sk/d/edVq3SkVYQ5P4A" class="sa-download">Скачать APK: mod много денег</a><br/>
-                <a href="https://yadi.sk/d/qx82iE25xKgXfA" class="sa-download">Скачать Кэш</a><br/>
-                <a href="https://yadi.sk/d/KKukfUHi30fuAg" class="sa-download">Скачать Кэш torrent</a><br/>
+                <a href="https://play.google.com/store/apps/details?id=com.rockstargames.gtasa&hl=ru" class="sa-download">Купить в Google Play</a><br/>
+                <a href="https://yadi.sk/d/-EZmtFmtfxttRQ" class="sa-download">Скачать APK (23,3МБ)</a><br/>
+                <a href="https://yadi.sk/d/edVq3SkVYQ5P4A" class="sa-download">Скачать APK: mod много денег (17МБ)</a><br/>
+                <a href="https://yadi.sk/d/qx82iE25xKgXfA" class="sa-download">Скачать Кэш (1.76ГБ)</a><br/>
+                <a href="https://yadi.sk/d/KKukfUHi30fuAg" class="sa-download">Скачать Кэш torrent (18КБ)</a><br/>
                <p class="instruction"> Инструкция:<br/>
                    Разархивировать кэш в папку android/obb/ и установить APK.</p>
             </div>
             <hr/>
             <div class="ios-vers">
                 <h1>IOS версия</h1>
-                <a href="https://yadi.sk/d/l3byjz2yJ5WCfQ" class="sa-download">Скачать ipa</a><br/>
+                <a href="https://itunes.apple.com/ru/app/grand-theft-auto-san-andreas/id763692274?mt=8" class="sa-download">Купить в App store</a><br/>
+                <a href="https://yadi.sk/d/l3byjz2yJ5WCfQ" class="sa-download">Скачать IPA (1.52ГБ)</a><br/>
                 <p class="instruction"> Инструкция:<br/>
                    1. Подключите iPhone к компьютеру. Если это требуется, подтвердите доверенность этому компьютеру.<br/>
                     <br/>
@@ -66,12 +67,32 @@
             </div>
         </div>
     </center>
+           <div class="men">
+        <nav class="men-nav">
+          <a href="https://vk.com/blueguysinc" target="_blank" class="link2">Группа Вконтакте</a>
+          <a href="https://movingmilkshake.github.io/" target="_blank" class="link2">Вселенская мощь</a>
+          <a href="https://tvoyotec.github.io/index.html" target="_blank" class="link2">Blue Guys Phone Manager</a>
+        </nav>
+         <div class="section">
+  <a href="#men" class="menu-btn">
+    <span></span>
+  </a>
+</div>
+</div>
     </main>
     <footer>
         <hr/>
         <p class="text-end">Сайт создан компанией Vietnam</p> 
         <hr/>
     </footer>
-    <script src="JS/JS.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+     <script src="JS/JS.js"></script>
+    <script>
+$('.menu-btn').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('menu-btn_active');
+  $('.men-nav').toggleClass('men-nav_active');
+});
+</script>
 </body>
 </html>
