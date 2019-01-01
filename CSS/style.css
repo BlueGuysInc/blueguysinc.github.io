@@ -172,8 +172,8 @@
 .link2{
     text-decoration: none;
     color:black;
-    font-size:20px;
-    padding-right: 15px;
+    
+    padding-right: 5px;
     transition: 0.5s;
 }
 .link2:hover{
@@ -190,6 +190,7 @@
   bottom:40px;
   right:10px;
   z-index:6;
+
 }
 .men-nav a {
   text-decoration: none;
@@ -199,6 +200,8 @@
   display: inline-block;
   margin-right: 20px;
   transition: 1s;
+  font-size:17px;
+  font-weight: 600;
 }
 .men-nav {
   transition: 0.2s;
