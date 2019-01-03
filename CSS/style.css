@@ -816,7 +816,6 @@ body *::selection {
         transform: rotate(14deg);
     }   
     .link2{
-        font-size:35px;
         padding-right: 45px;
     }
     .men-nav{
@@ -824,6 +823,7 @@ body *::selection {
     }
     .men-nav a{
         margin-right: 0px;
+        font-size:30px;
     }
     .pod-menu:hover{
     background:#9b9b9b!important;
