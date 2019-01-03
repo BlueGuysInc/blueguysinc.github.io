@@ -255,13 +255,12 @@
     background: lightgray;
     margin-right:0px;
     box-shadow:10px 0 15px;
+    display:none;
 }
 
 .codes-cods{
     margin-left:5px;
 }
-
-
 .download-content{
     border:1px solid;
     width: 1200px;
@@ -418,11 +417,9 @@ video{
 .img12{
     background-image: url('https://m.thegtaplace.com/images/gta3/screenshots/pc/ss8.jpg');
 }
-
 .img13{
     background-image: url('https://i.neoseeker.com/p/Games/Xbox/Action/Automobile/grand_theft_auto_the_trilogy_image25.jpg');
 }
-
 .img14{
     background-image: url('http://www.thegtaplace.com/downloads/screens/gta3/cars/3359_screen02.jpg');
 }
