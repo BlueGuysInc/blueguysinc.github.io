@@ -3,7 +3,7 @@
  <head>
      <meta charset="UTF-8">
      <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
-     <link rel="shortcut icon" href="Image/PicsArt_11-26-004.18.26.ico" type="image/png">
+     <link rel="shortcut icon" href="Image/BGg.ico" type="image/png">
      <title>Blue Guys</title>
  </head>
 
@@ -23,8 +23,8 @@
              <span></span>
            </a>
 </div>  
- <div class="menu">   
-        <div onclick="viewDiv4()" class="pod-menu" id="Menu4">
+ <div class="menu">
+     <div onclick="viewDiv4()" class="pod-menu" id="Menu4">
           <a href="#men" class="pod-text"> <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple71/v4/ca/cb/79/cacb7986-2ba9-6c0b-e31d-f8a3cb8e8147/mzl.jsxnkppy.png/1200x630bb.png" height="50">
          Mafia  II</a>
          
@@ -33,9 +33,9 @@
           <a href="#men" class="pod-text"> <img src="http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-25/256/Bully-Scholarship-Edition-1-icon.png" height="50">
          Bully</a>
          
- </div> 
-      <div onclick="viewDiv()" class="pod-menu" id="Menu1">
-       <a href="#men" class="pod-text"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/GTA_San_Andreas.svg/1200px-GTA_San_Andreas.svg.png" height="50">
+ </div>
+     <div onclick="viewDiv()" class="pod-menu" id="Menu1">
+       <a href="#men" class="pod-text"> <img src="https://vignette.wikia.nocookie.net/logopedia/images/e/e3/Grand-Theft-Auto-San-Andreas-Logo.svg/revision/latest?cb=20130330060336" height="50">
          Grand Theft Auto: San Andreas</a>
         
    </div>
@@ -50,7 +50,8 @@
          
  </div>
 
-</div>
+
+ </div>
 
      <div id="content" class="contentX" style="display:none;">
         <center>
@@ -157,7 +158,7 @@
              </ul></div>
                 <br/>
              <div class="opis">
-
+                 Vito Scaletta has started to make a name for himself on the streets of Empire Bay as someone who can be trusted to get a job done. Together with his buddy Joe, he is working to prove himself to the Mafia, quickly escalating up the family ladder with crimes of larger reward, status and consequence… the life as a wise guy isn’t quite as...
              </div>    
              <hr/>
                   <div class="table">
@@ -181,7 +182,7 @@
              </ul></div>
                 <br/>
              <div class="opis">
-
+                 Bully tells the story of mischievous 15-year-old Jimmy Hopkins as he goes through the hilarity and awkwardness of adolescence. Beat the jocks at dodge ball, play pranks on the preppies, save the nerds, kiss the girl and navigate the social hierarchy in the worst school around.
              </div>    
              <hr/>
                   <div class="table">
@@ -196,7 +197,6 @@
             <iframe width="750" height="400" src="https://www.youtube.com/embed/OImxuxMcdjw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </center>
 </div>
-     </div>
        <div class="men">
         <nav class="men-nav">
           <a href="https://vk.com/blueguysinc" target="_blank" class="link2">Группа Вконтакте</a>
@@ -218,12 +218,12 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $('.menu-btn').on('click', function(e) {
-  e.preventDefault;
+  e.preventDefault();
   $(this).toggleClass('menu-btn_active');
   $('.men-nav').toggleClass('men-nav_active');
 });
 $('.close').on('click', function(e){
-    e.preventDefault;
+    e.preventDefault();
   $(this).toggleClass('close_active');
   $('.menu').toggleClass('menu-close');
   $('.close_div').toggleClass('close_div_active');

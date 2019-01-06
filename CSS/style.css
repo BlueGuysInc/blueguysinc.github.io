@@ -10,6 +10,10 @@
     transition:0;
 }
 
+#Content_Open{
+    display:block;
+}
+
 .close span{
     position: absolute;
     margin-top: -1px;
@@ -52,6 +56,7 @@
 }
 .close_div_active{
     left:0;
+    top: 850px;
     transition:0.4s;
 }
 .close_active span:after{
@@ -67,15 +72,21 @@
     bottom: 3px;
 }
 .contentX_active{
-    width: 92% !important;
+    width: 93% !important;
     margin-right: 3%;
-    margin-left: 5%;
+    margin-left: 1%;
     box-shadow:0 0 30px!important;
 }
 .menu-close{
-    margin-left:-100%;
+    margin-left:-30%;
     display:none;
-    transition:0.6s;
+}
+
+.menu-close img{
+    margin-left:83%;
+    transition: 0.2s;
+    transition-delay:0.3s;
+    height: 57px;
 }
 
 .spn-inf{
@@ -227,6 +238,7 @@
 .opis{
     font-size:20px;
     color:#353421;
+    padding:25px auto;
 }
 
 .Description{
@@ -255,20 +267,21 @@
     background: lightgray;
     margin-right:0px;
     box-shadow:10px 0 15px;
+    transition: 0.6s;
 }
 
 .codes-cods{
     margin-left:5px;
 }
+
 .download-content{
     border:1px solid;
-    width: 1200px;
+    width: 1000px;
     margin-top:20px;
     margin-bottom:20px;
     background:#dee2e5;
     font-family:sans-serif;
 }
-
 
 .sa-download{
     border:1px solid gray;
@@ -282,7 +295,6 @@
     display:block;
     width: 400px;
     transition:0.3s;
-    border-radius:5%;
     cursor:pointer;
 }
 
@@ -291,7 +303,6 @@
     border:1px solid green;
     color:white;
 }
-
 
 .back2:hover{
     background: orangered;
@@ -347,7 +358,6 @@ video{
     height: 400px;
     background: gray 50%/cover no-repeat;
     transition: 0.3s;
-    border: 2px solid black;
     margin-top:15px;
 }
 
@@ -721,6 +731,9 @@ body *::selection {
         padding-bottom:70px;
         width: 100%;
     }
+    .header1{
+        padding-top: 0;
+    }
     .contentX h1{
         font-size:47px;
     }
@@ -730,10 +743,7 @@ body *::selection {
     .contentX p{
         font-size:40px;
     }
-    .instruction {
-        font-size:45px;
-    }
-    #page1 p, 
+    #page1 p,
     #page1 h2,   
     #page2 p, 
     #page3 p{

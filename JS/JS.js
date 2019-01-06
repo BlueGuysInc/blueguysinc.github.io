@@ -274,6 +274,8 @@ var cunt4 = document.getElementById("content4");
 var menu4 = document.getElementById("Menu4");
 var cunt5 = document.getElementById("content5");
 var menu5 = document.getElementById("Menu5");
+var cunt6 = document.getElementById("content6");
+var menu6 = document.getElementById("Menu6");
 function viewDiv(){
      cunt2.style.display = "none";
      cunt3.style.display = "none";
@@ -395,11 +397,3 @@ function viewDiv5(){
         footer.style.marginTop = "342px";
 };
 };
- 
-     
-   
-    
-
-
-
-
