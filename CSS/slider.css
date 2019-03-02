@@ -1,0 +1,100 @@
+#slider7{
+    animation:slider7 15s ease-in-out infinite;
+-webkit-animation:slider7 15s ease-in-out infinite;
+}
+#slider6{
+    animation:slider6 15s ease-in-out infinite;
+-webkit-animation:slider6 15s ease-in-out infinite;
+}
+#slider5{
+    animation:slider5 15s ease-in-out infinite;
+-webkit-animation:slider5 15s ease-in-out infinite;
+}
+#slider4{
+    animation:slider4 15s ease-in-out infinite;
+-webkit-animation:slider4 15s ease-in-out infinite;
+}
+#slider3{
+    animation: slider3 15s ease-in-out infinite;
+-webkit-animation:slider3 15s ease-in-out infinite;
+}
+#slider2{
+    animation:slider2 15s ease-in-out infinite;
+-webkit-animation:slider2 15s ease-in-out infinite;
+}
+#slider{
+    animation:slider 15s ease-in-out infinite;
+-webkit-animation:slider 15s ease-in-out infinite;
+}
+.slider{
+height: 480px;
+width: 790px;
+margin-top: 15px;   
+}
+@keyframes slider{
+0% {background-image:url('https://megagames.com/sites/default/files/game-content-images/cnsrckgtasnrs_l2.jpg');
+background-size:100% 100%}
+20% {background-image:url('https://www.technobuffalo.com/wp-content/uploads/2014/10/Grand-Theft-Auto-San-Andreas-Xbox-360-Port-7.jpg');background-size:100% 100%}
+40% {background-image:url('http://assets.vg247.com/current//2014/10/screenlg2.jpg');background-size:100% 100%}
+80% {background-image:url('https://m.thegtaplace.com/images/sanandreas/screenshots/pc/CJ_in_GlenPark.jpg');background-size:100% 100%}
+100% {background-image: url('https://m.thegtaplace.com/images/sanandreas/screenshots/pc/pc_10.jpg');background-size:100% 100%}
+}
+@keyframes slider2{
+    0% {background-image:url('https://m.thegtaplace.com/images/vicecity/screenshots/pc/screen12.jpg');background-size:100% 100%;}
+    20% {background-image:url('https://m.thegtaplace.com/images/vicecity/screenshots/pc/screen06.jpg');background-size:100% 100%}
+    40% {background-image:url('https://gamefaqs.akamaized.net/screens/7/1/d/gfs_45139_2_14_mid.jpg');background-size:100% 100%}
+    80% {background-image:url('https://m.thegtaplace.com/images/vicecity/screenshots/xbox/full_vc_05.jpg');background-size:100% 100%}
+    100% {background-image: url('https://assets.vg247.com/current//2012/12/gta-vice-city-ios-2.png');background-size:100% 100%}
+}
+@keyframes slider3{
+    0% {background-image:url('https://m.thegtaplace.com/images/gta3/screenshots/pc/ss8.jpg');background-size:100% 100%;}
+    20% {background-image:url('https://m.thegtaplace.com/images/gta3/screenshots/pc/ss6.jpg');background-size:100% 100%}
+    40% {background-image:url('https://www.rockstargames.com/rockstar_games/games/img/screens/24-1.jpg');background-size:100% 100%}
+    80% {background-image:url('http://199.101.98.242/media/images/150320-Grand_Theft_Auto_III_(USA)-1446919150.jpg');background-size:100% 100%}
+    100% {background-image: url('https://m.thegtaplace.com/images/gta3/screenshots/pc/ss2.jpg');background-size:100% 100%}
+}   
+@keyframes slider4{
+    0% {background-image:url('https://www.gamereactor.eu/media/77/mafia2_217792b.jpg');background-size: 100% 100%;}
+    20% {background-image:url('http://img.hexus.net/v2/gaming/screenshots_pc/maf2/maf2_large_1.jpg');background-size: 100% 100%}
+    40% {background-image:url('https://images.gamewatcherstatic.com/screenshot/image/8/31/152158/00347668.jpg');background-size: 100% 100%}
+    80% {background-image:url('http://www.gamer.ru/system/attached_images/images/000/241/642/original/27-2-1280x720.jpg');background-size: 100% 100%}
+    100% {background-image: url('http://1.bp.blogspot.com/-vATvea2AsJI/UfuoN1JO4lI/AAAAAAAAAI8/nGWNwz14Tk4/s1600/mafia+2+-+before+shooting.jpg');background-size: 100% 100%}
+}     
+@keyframes slider5{
+    0% {background-image:url('http://ps2media.ign.com/ps2/image/article/725/725593/bully-20060814062422861.jpg');background-size: 100% 100%;}
+    20% {background-image:url('https://www.mobygames.com/images/shots/l/631068-bully-scholarship-edition-xbox-360-screenshot-lockpick-the.jpg');background-size: 100% 100%}
+    40% {background-image:url('https://www.mobygames.com/images/shots/l/688370-bully-playstation-2-screenshot-i-just-wanted-to-talk-to-this.png');background-size: 100% 100%}
+    80% {background-image:url('http://sfx.thelazy.net/static/media/medthumb/Screenshot151682.bmp.png');background-size: 100% 100%}
+    100% {background-image: url('https://www.gamegrin.com/assets/games/bully-scholarship-edition/screenshots/bully-scholarship-edition-screenshot-13.jpg');background-size: 100% 100%}
+}    
+@keyframes slider6{
+    0% {background-image:url('https://media.gtanet.com/images/5530-gta-iv-pc-screenshot.jpg');background-size: 100% 100%;}
+    20% {background-image:url('https://m.thegtaplace.com/images/gta4/screenshots/pc/gta-iv-pc-screenshot_049.jpg');background-size: 100% 100%}
+    40% {background-image:url('https://thegtaplace.com/images/gta4/screenshots/104.jpg');background-size: 100% 100%}
+    80% {background-image:url('https://www.newgamenetwork.com/images/uploads/gallery/GTA4EpisodesLibertyCity/GTA4%20EPLC%20PC%2015%20May%202010%20%2001.jpg');background-size: 100% 100%}
+    100% {background-image: url('https://images.filehippo.net/img/ex/4844__gtaiv_patch_1_19_6_15.png');background-size: 100% 100%}
+}  
+@keyframes slider7{
+    0% {background-image:url('http://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_1.jpg');background-size: 100% 100%;}
+    20% {background-image:url('https://assets.vg247.com/current//2012/11/GTA-5-1.jpg');background-size: 100% 100%}
+    40% {background-image:url('https://www.igta5.com/images/official-screenshot-pc-vinewood-cars.jpg');background-size: 100% 100%}
+    80% {background-image:url('https://static1.gamespot.com/uploads/original/1179/11799911/2720149-rsg_gta+online_ng_screenshot_017.jpg');background-size: 100% 100%}
+    100% {background-image: url('https://img.cinemablend.com/cb/9/9/0/6/2/4/990624f38d58cae132f7e9b9c41f1bb9ea0fb5f2a7dfbccdf9feb28c5e209260.jpg');background-size: 100% 100%}
+}  
+@media screen and (max-width:990px){
+    .slider{
+        height: 650px;
+        width: 96%;
+        margin:2%;
+    }
+
+}
+@media screen and (max-width: 1045px) and (min-width:991px){
+    .slider{
+        width: 600px;
+        height: 300px;
+    }
+}
+
+
+

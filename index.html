@@ -3,18 +3,20 @@
  <head>
      <meta charset="UTF-8">
      <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
-     <link rel="shortcut icon" href="Image/BGg.ico" type="image/png">
+     <link href="CSS/slider.css" rel="stylesheet" type="text/css"/>
+     <link rel="shortcut icon" href="Image/BG-ico.ico" type="image/png">
      <title>Blue Guys</title>
  </head>
-
+ <body onload="Load_screen()">
+      <div id="loading"></div>
  <header>
     <div class="logo "> <a href="index.html" class="header1">Blue Guys</a></div>
  </header>
  <main>
- <div class="buttons">
-    <a href="index.html" class="button place">Главная</a>
-    <a href="Information.html" class="button buttons2">Информация</a>
- </div>
+   <div class="buttons">
+      <a href="index.html" class="button place">Игры</a>
+      <a href="programs.html" class="button buttons2">Программы</a>
+  </div>
 
 
   <div class="container fix">  
@@ -25,45 +27,45 @@
 </div>  
  <div class="menu">
      <div onclick="viewDiv4()" class="pod-menu" id="Menu4">
-          <a href="#men" class="pod-text"> <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple71/v4/ca/cb/79/cacb7986-2ba9-6c0b-e31d-f8a3cb8e8147/mzl.jsxnkppy.png/1200x630bb.png" height="50">
-         Mafia  II</a>
+        <a href="#men" class="pod-text"> <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple71/v4/ca/cb/79/cacb7986-2ba9-6c0b-e31d-f8a3cb8e8147/mzl.jsxnkppy.png/1200x630bb.png" height="50">
+        <b class="txt-in-menu">Mafia  II</b></a>
          
- </div>
-          <div onclick="viewDiv5()" class="pod-menu" id="Menu5">
-          <a href="#men" class="pod-text"> <img src="http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-25/256/Bully-Scholarship-Edition-1-icon.png" height="50">
-         Bully</a>
+     </div>
+     <div onclick="viewDiv5()" class="pod-menu" id="Menu5">
+        <a href="#men" class="pod-text"> <img src="http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-25/256/Bully-Scholarship-Edition-1-icon.png" height="50">
+        <b class="txt-in-menu">Bully</b></a>
          
- </div>
+     </div>
+     <div onclick="viewDiv7()" class="pod-menu" id="Menu7">
+        <a href="#men" class="pod-text"> <img src="https://vrzone.com/wp-content/uploads/2013/07/Grand_Theft_Auto_V_logo_-_transparent_background.png" height="50">
+        <b class="txt-in-menu">Grand Theft Auto V</b></a>
+     </div>
+     <div onclick="viewDiv6()" class="pod-menu" id="Menu6">
+        <a href="#men" class="pod-text"> <img src="https://vignette.wikia.nocookie.net/the-gaming-lemon/images/7/7b/GTA_IV_Logo_Transparent.png/revision/latest?cb=20150205010223" height="50">
+        <b class="txt-in-menu">Grand Theft Auto IV</b></a>
+   
+     </div>
      <div onclick="viewDiv()" class="pod-menu" id="Menu1">
        <a href="#men" class="pod-text"> <img src="https://vignette.wikia.nocookie.net/logopedia/images/e/e3/Grand-Theft-Auto-San-Andreas-Logo.svg/revision/latest?cb=20130330060336" height="50">
-         Grand Theft Auto: San Andreas</a>
+        <b class="txt-in-menu">Grand Theft Auto: San Andreas</b></a>
         
    </div>
-        <div onclick="viewDiv2()" class="pod-menu" id="Menu2">
-          <a href="#men" class="pod-text"> <img src="http://vertigosn.ru/pics/solution/GTAVC/Name.png" height="50">
-         Grand Theft Auto: Vice City</a>
+     <div onclick="viewDiv2()" class="pod-menu" id="Menu2">
+        <a href="#men" class="pod-text"> <img src="http://www.gamer.ru/system/attached_images/images/000/450/354/original/gta_vice_city_logo.png" height="50">
+        <b class="txt-in-menu">Grand Theft Auto: Vice City</b></a>
          
- </div>
-         <div onclick="viewDiv3()" class="pod-menu" id="Menu3">
-          <a href="#men" class="pod-text"> <img src="https://pngimage.net/wp-content/uploads/2018/06/gta-3-png-2.png" height="50">
-         Grand Theft Auto: Ⅲ</a>
+     </div>
+     <div onclick="viewDiv3()" class="pod-menu" id="Menu3">
+        <a href="#men" class="pod-text"> <img src="https://pngimage.net/wp-content/uploads/2018/06/gta-3-png-2.png" height="50">
+        <b class="txt-in-menu">Grand Theft Auto: Ⅲ</b></a>
          
- </div>
+     </div>
 
 
  </div>
-
-     <div id="content" class="contentX" style="display:none;">
+     <div id="content" class="contentX">
         <center>
-            <div class="tab-content active">
-             <div id="Slider" class="slider img-preview1"></div>
-             <ul class="icons">
-                 <li id="divIcon1" class="icon"></li>
-                 <li id="divIcon2" class="icon"></li>
-                 <li id="divIcon3" class="icon"></li>
-                 <li id="divIcon4" class="icon"></li>
-                 <li id="divIcon5" class="icon"></li>
-             </ul></div>
+    <div id="slider" class="slider"></div>
                 <br/>
              <div class="opis">
                  Five years ago Carl Johnson escaped from the pressures of life in Los Santos, San Andreas... a city tearing itself apart with gang trouble, drugs and corruption. Where filmstars and millionaires do their best to avoid the dealers and gangbangers. Now, it's the early 90s. Carl's got to go home.
@@ -71,15 +73,11 @@
              <hr/>
                   <div class="table">
              <a href="SADownload.html" class="download">Скачать</a>
-             <a href="SAcodes.html" class="codes">Чит-коды</a>
          </div>
          <br/>
-            <h1>Трейлеры игры</h1>
-            <p>Трейлер PC версии:</p>
          <video width="750" height="400" controls="controls">
              <source src="video/videoplayback.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
          </video>
-            <p>Трейлер Мобильной версии:</p>
          <video width="750" height="400" controls="controls">
             <source src="video/Grand%20Theft%20Auto-%20San%20Andreas%20-%20Mobile%20Trailer.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
          </video>
@@ -87,16 +85,9 @@
 
      </div>
 
-   <div id="content2" class="contentX" style="display:none;">
+   <div id="content2" class="contentX">
     <center>
-    <div id="divSlider2" class="slider img-preview2"></div>
-    <div class="icons">
-        <div id="divIcon6" class="icon"></div>
-        <div id="divIcon7" class="icon"></div>
-        <div id="divIcon8" class="icon"></div>
-        <div id="divIcon9" class="icon"></div>
-        <div id="divIcon10" class="icon"></div>
-    </div>
+            <div id="slider2" class="slider"></div>
      <br/>
     <div class="opis">
         Welcome to Vice City. Welcome to the 1980s. From the decade of big hair, excess and pastel suits comes a story of one man's rise to the top of the criminal pile.
@@ -104,58 +95,34 @@
       <hr/>
             <div class="table">
              <a href="VCdownload.html" class="download">Скачать</a>
-             <a href="VCcodes.html" class="codes">Чит-коды</a>
          </div>
           <br/>
-            <h1>Трейлеры игры</h1>
-            <p>Трейлер PC версии:</p>
       <iframe width="750" height="400" src="https://www.youtube.com/embed/BcqMaYdYow0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Трейлер Мобильной версии:</p>
       <iframe width="750" height="400" src="https://www.youtube.com/embed/f_VBXRZuHTc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </center> 
    </div>
 
     
-     <div id="content3" class="contentX" style="display:none;">
+     <div id="content3" class="contentX">
         <center>
-            <div class="tab-content active">
-             <div id="Slider3" class="slider img-preview3"></div>
-             <ul class="icons">
-                 <li id="divIcon11" class="icon"></li>
-                 <li id="divIcon12" class="icon"></li>
-                 <li id="divIcon13" class="icon"></li>
-                 <li id="divIcon14" class="icon"></li>
-                 <li id="divIcon15" class="icon"></li>
-             </ul></div>
+                <div id="slider3" class="slider"></div>
                 <br/>
              <div class="opis">
 
              </div>    
              <hr/>
-                  <div class="table">
+               <div class="table">
              <a href="3download.html" class="download">Скачать</a>
-             <a href="3codes.html" class="codes">Чит-коды</a>
          </div>
          <br/>
-            <h1>Трейлеры игры</h1>
-            <p>Трейлер PC версии:</p>
             <iframe width="750" height="400" src="https://www.youtube.com/embed/WUi3davvBmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Трейлер Мобильной версии:</p>
             <iframe width="750" height="400" src="https://www.youtube.com/embed/0VxoWT0MyLE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </center>
 
      </div>
-      <div id="content4" class="contentX" style="display:none;">
+      <div id="content4" class="contentX">
         <center>
-            <div class="tab-content active">
-             <div id="Slider4" class="slider img-preview4"></div>
-             <ul class="icons">
-                 <li id="divIcon16" class="icon"></li>
-                 <li id="divIcon17" class="icon"></li>
-                 <li id="divIcon18" class="icon"></li>
-                 <li id="divIcon19" class="icon"></li>
-                 <li id="divIcon20" class="icon"></li>
-             </ul></div>
+                <div id="slider4" class="slider"></div>
                 <br/>
              <div class="opis">
                  Vito Scaletta has started to make a name for himself on the streets of Empire Bay as someone who can be trusted to get a job done. Together with his buddy Joe, he is working to prove himself to the Mafia, quickly escalating up the family ladder with crimes of larger reward, status and consequence… the life as a wise guy isn’t quite as...
@@ -165,21 +132,12 @@
              <a href="MAFdownload.html" class="download">Скачать</a>
          </div>
          <br/>
-            <h1>Трейлер PC версии:</h1>
-<iframe width="750" height="400" src="https://www.youtube.com/embed/1_Q3MZC-34o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="750" height="400" src="https://www.youtube.com/embed/1_Q3MZC-34o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </center>
 </div>
-<div id="content5" class="contentX" style="display:none;">
+<div id="content5" class="contentX">
         <center>
-            <div class="tab-content active">
-             <div id="Slider5" class="slider img-preview5"></div>
-             <ul class="icons">
-                 <li id="divIcon21" class="icon"></li>
-                 <li id="divIcon22" class="icon"></li>
-                 <li id="divIcon23" class="icon"></li>
-                 <li id="divIcon24" class="icon"></li>
-                 <li id="divIcon25" class="icon"></li>
-             </ul></div>
+                <div id="slider5" class="slider"></div>
                 <br/>
              <div class="opis">
                  Bully tells the story of mischievous 15-year-old Jimmy Hopkins as he goes through the hilarity and awkwardness of adolescence. Beat the jocks at dodge ball, play pranks on the preppies, save the nerds, kiss the girl and navigate the social hierarchy in the worst school around.
@@ -187,20 +145,49 @@
              <hr/>
                   <div class="table">
              <a href="BULdownload.html" class="download">Скачать</a>
-             <a href="BULcodes.html" class="codes">Чит-коды</a>
          </div>
          <br/>
-            <h1>Трейлеры игры</h1>
-            <p>Трейлер PC версии:</p>
             <iframe width="750" height="400" src="https://www.youtube.com/embed/88KNf0MtU14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Трейлер Мобильной версии:</p>
             <iframe width="750" height="400" src="https://www.youtube.com/embed/OImxuxMcdjw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </center>
 </div>
+
+<div id="content6" class="contentX">
+   <center>
+           <div id="slider6" class="slider"></div>
+           <br/>
+        <div class="opis">
+          What does the American dream mean today? For Niko Bellic fresh off the boat from Europe, it is the hope he can escape from his past. For his cousin, Roman, it is the vision that together they can find fortune in Liberty City, gateway to the land of opportunity. 
+        </div>    
+        <hr/>
+            <div class="table">
+        <a href="4download.html" class="download">Скачать</a>
+    </div>
+    <br/>
+    <iframe width="750" height="400" src="https://www.youtube.com/embed/kOZ8bRAO7YQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="789" height="444" src="https://www.youtube.com/embed/tshPSxS9dGY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="789" height="444" src="https://www.youtube.com/embed/LMKvTd7aNsU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+</div>
+<div id="content7" class="contentX">
+      <center>
+              <div id="slider7" class="slider"></div>
+              <br/>
+           <div class="opis">
+           </div>    
+           <hr/>
+                <div class="table">
+           <a href="5download.html" class="download">Скачать</a>
+       </div>
+       <br/>
+       <iframe width="789" height="444" src="https://www.youtube.com/embed/3DBrG2YjqQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe width="789" height="444" src="https://www.youtube.com/embed/QkkoHAzjnUs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </center>
+   </div>
        <div class="men">
         <nav class="men-nav">
           <a href="https://vk.com/blueguysinc" target="_blank" class="link2">Группа Вконтакте</a>
-          <a href="https://movingmilkshake.github.io/" target="_blank" class="link2">Вселенская мощь</a>
+          <a href="vk.com/vietnam_corp" target="_blank" class="link2">Vietnam</a>
           <a href="https://tvoyotec.github.io/index.html" target="_blank" class="link2">Blue Guys Phone Manager</a>
         </nav>
          <div class="section">
@@ -210,11 +197,10 @@
 </div>
 </div>
  </main>
-  <footer id="footer">
-     <hr/>
-     <p class="text-end">Сайт создан компанией Vietnam</p>
-     <hr/>
- </footer> 
+ <footer id="footer">
+    <p class="menu-footer"><a href="index.html" class="podmenu-footer">Игры</a><a href="programs.html" class="podmenu-footer"> Программы</a><a href="information.html" class="podmenu-footer information">Информация</a></p>
+    <p class="text-end">Сайт создан компанией <a href="vk.com/vietnam_corp">Vietnam</a></p>
+</footer>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $('.menu-btn').on('click', function(e) {
@@ -228,6 +214,7 @@ $('.close').on('click', function(e){
   $('.menu').toggleClass('menu-close');
   $('.close_div').toggleClass('close_div_active');
   $('.contentX').toggleClass('contentX_active');
+  $('.txt-in-menu').toggleClass('txt-in-menu_active');
     });
 </script>
 <script src="JS/JS.js"></script>

@@ -1,3 +1,80 @@
+.podmenu-footer{
+    color:rgb(95, 93, 93);
+    text-decoration: none;
+    margin-left:20px;
+    font-size:23px;
+    font-family:'Times New Roman', Times, sans-serif;
+    display:inline-block;
+}
+.podmenu-footer:hover{
+    color:rgb(119, 118, 118);
+}
+.information{
+    display:none;
+}
+.menu-footer{
+    margin-left:50px;
+    width: 600px;
+    display: inline-block;
+}
+.programs{
+    margin-top: 50px;
+    margin-left:5%;
+    margin-right:10%;
+}
+.block{
+    box-shadow: 0 0 10px slategrey;
+    width: 200px;
+    text-align: center;
+    margin-left:40px;
+    background:slategrey;
+    padding:15px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+    height: 300px;
+    margin-top: 40px;
+    margin-right:40px;
+    vertical-align: top;
+}
+.block h2{
+    margin-top:70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:26px;
+    opacity:0.7;
+}
+.block:hover{
+    background:lightslategrey;
+}
+.block img{
+    opacity:0.7;
+    width: 120px;
+}
+#loading{
+	position: fixed;
+    width: 100%;
+    height: 100vh;
+	background: #fff url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif') no-repeat center center;
+    background-size: 30%;	
+    z-index: 99999;
+    transform: translateY(-25px);
+    overflow:hidden; 
+}
+#loading ~ body{
+    background:black;
+}
+.close_m{
+    border-right:none;
+    background:inherit;
+}
+.active_m{
+    border-right:none;
+    background:lightgray;
+}
+.disable_m{
+    background:inherit;
+    border-right:1px solid gray;
+}
 .container{
     overflow:hidden;
     padding-bottom:15px;
@@ -6,14 +83,10 @@
 .close_div{
     position: absolute;
     left:31%;
-    top:680px;
-    transition:0;
+    top:810px;
+    transition:0.5;
+    transition-delay: 0.2s;    
 }
-
-#Content_Open{
-    display:block;
-}
-
 .close span{
     position: absolute;
     margin-top: -1px;
@@ -21,7 +94,7 @@
     margin-left: -14px;
     width: 30px;
     height: 2px;
-    background-color: #222; 
+    background-color: #000; 
 }
 .close{
     position: relative;
@@ -37,7 +110,7 @@
 .close span::before{
     content:"";
     position: absolute;
-    background: black;
+    background: #000;
     height: 2px;
     width: 20px;
     bottom: 3px;
@@ -47,7 +120,7 @@
 .close span::after{
     content:"";
     position: absolute;
-    background: black;
+    background: #000;
     height: 2px;
     width: 20px;
     top: 3px;
@@ -56,7 +129,7 @@
 }
 .close_div_active{
     left:0;
-    top: 850px;
+    top:860px;
     transition:0.4s;
 }
 .close_active span:after{
@@ -72,25 +145,26 @@
     bottom: 3px;
 }
 .contentX_active{
-    width: 93% !important;
+    width: 90% !important;
     margin-right: 3%;
-    margin-left: 1%;
+    margin-left: 0.7%;
     box-shadow:0 0 30px!important;
 }
 .menu-close{
-    margin-left:-30%;
+    margin-left:-29%;
+}
+.txt-in-menu_active{
     display:none;
 }
-
+.txt-in-menu{
+    font-family:sans-serif;
+    font-weight: 700;
+}
 .menu-close img{
-    margin-left:83%;
+    margin-left:81%;
     transition: 0.2s;
     transition-delay:0.3s;
     height: 57px;
-}
-
-.spn-inf{
-    font-size: 25px;
 }
 
 ::-webkit-scrollbar {
@@ -108,9 +182,6 @@
 ::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(255,0,0,0.4); 
 }
-
-
-
 .menu-btn {
   display: block;
   width: 50px;
@@ -216,10 +287,7 @@
 }
 .men-nav {
   transition: 0.2s;
-  transform: scaleX(0) translateX(0%);
-  transform-origin: right center;
-  opacity: 0;
-  visibility: hidden;
+  display:none;
   height: 50px;
   line-height: 50px;
   background-color: #fff;
@@ -230,9 +298,7 @@
   border-bottom-left-radius: 50px;
 }
 .men-nav_active {
-  transform: scaleX(1) translateX(0%);
-  opacity: 1;
-  visibility: visible;
+  display:block;
 }
 
 .opis{
@@ -245,20 +311,6 @@
     font-size:20px;
 }
 
-.info{
-    color:white;
-}
-
-.link{
-    font-size:25px;
-    color:blue;
-    text-decoration:none;
-}
-
-.link:hover{
-    text-decoration:underline;
-}
-
 .contentX{
     width:64%;
     min-height:207px;
@@ -268,10 +320,7 @@
     margin-right:0px;
     box-shadow:10px 0 15px;
     transition: 0.6s;
-}
-
-.codes-cods{
-    margin-left:5px;
+    display: none;
 }
 
 .download-content{
@@ -317,26 +366,22 @@ video{
     max-height: 600px;
 }
 
-.codes,
 .download{
     text-decoration:none;
     color:black;
-    font-size:25px;
-    margin-right:25px;
-    border:2px solid;
-    clip-path: polygon(12% 0%, 100% 0%, 75% 100%, 0% 100%);
-    padding-left:33px;
-    padding-right:43px;
-    padding-bottom:5px;
-    padding-top:5px;
+    font-size:30px;
     transition:0.3s;
     cursor:pointer;
-    display:inline-block;
+    padding: 5px;
+    border-radius: 5%;
+    box-shadow: 0 0 4px;
+    background: gray;
 }
 
-.codes:hover,
 .download:hover{
-    color: orangered;
+    box-shadow:0 0 4px #282828;
+    background:#282828;
+    color:lightgray;
     transition:0.3s;
 }
 
@@ -352,135 +397,6 @@ video{
     clear: both;
 }
 
-
-.slider {
-    width: 750px;
-    height: 400px;
-    background: gray 50%/cover no-repeat;
-    transition: 0.3s;
-    margin-top:15px;
-}
-
-.icons {
-    width: 255px;
-    margin: auto;
-}
-
-
-.icon {
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    border-radius: 50%;
-    background: gray 50%/cover no-repeat;
-    margin: 5px;
-    margin-left:1px;
-    cursor: pointer;
-    border: 0.5px solid gray;
-    transition:0.3s;
-}
-.img-preview1{
-    background-image: url('https://tse1.mm.bing.net/th?id=OIP.o_ROBMwVFKjASexDpT6vFQHaEK');
-}
-.img1 {
-    background-image:url('https://gtals.ru/wp-content/uploads/2016/08/gtasa_screens_pc-8.jpg');
-}
-
-.img2 {
-    background-image: url('https://m.thegtaplace.com/images/sanandreas/screenshots/pc/pc_10.jpg');
-}
-
-.img3 {
-    background-image: url('http://archive.videogamesdaily.com/media/gta_sanandreas_e3/04.jpg');
-}
-.img4 {
-    background-image: url('http://archive.videogamesdaily.com/media/gta_sanandreas_e3/03.jpg');
-}
-.img5 {
-    background-image: url('http://archive.videogamesdaily.com/media/gta_sanandreas_e3/01.jpg');
-}
-.img-preview2{
-    background-image:url('https://img.gta5-mods.com/q95/images/gta-vice-city-loading-screens/43986c-gta-vice-city-sonny-forelli-grand-theft-auto-1920x1200-wallpaper429131.jpg');
-}
-.img6{
-    background-image: url('https://m.thegtaplace.com/images/vicecity/screenshots/pc/screen12.jpg');
-}
-.img7{
-    background-image:url('https://m.thegtaplace.com/images/vicecity/screenshots/pc/screen03.jpg');
-}
-.img8{
-    background-image:url('https://u.kanobu.ru/screenshots/5ee91174-4e12-4ed8-9f0f-60e4fbd73b8b.png');
-}
-.img9{
-    background-image:url('https://m.thegtaplace.com/images/vicecity/screenshots/xbox/full_vc_10.jpg');
-}
-.img10{
-    background-image:url('https://www.gry-online.pl/galeria/galeria_duze3/657387421.jpg');
-}
-.img-preview3{
-    background-image:url('https://libertycity.ru/uploads/download/gta3_modtext/fulls/7vnia9fijjfmolr0j4mp2durf1/14665328213193_test13f.png');
-}
-.img11{
-    background-image:url('https://m.thegtaplace.com/images/gta3/screenshots/pc/ss6.jpg') 
-}
-.img12{
-    background-image: url('https://m.thegtaplace.com/images/gta3/screenshots/pc/ss8.jpg');
-}
-.img13{
-    background-image: url('https://i.neoseeker.com/p/Games/Xbox/Action/Automobile/grand_theft_auto_the_trilogy_image25.jpg');
-}
-.img14{
-    background-image: url('http://www.thegtaplace.com/downloads/screens/gta3/cars/3359_screen02.jpg');
-}
-.img15{
-    background-image: url('https://download.gtanet.com/gtagarage/files/image_21025.jpg');
-}
-.img-preview4{
-    background-image:url('https://gamesqa.ru/wp-content/uploads/2018/03/maxresdefault-2.jpg')
-}
-.img16{
-     background-image:url('https://images.gamewatcherstatic.com/screenshot/image/8/31/152158/00347668.jpg');
-}
-.img17{
-    background-image:url('http://mafia2-game.ru/i/scr/6.jpg');
-}
-.img18{
-    background-image:url('https://media.indiedb.com/images/members/1/339/338433/Mafia2_2010-08-26_20-41-04-89.jpg');
-}
-.img19{
-    background-image:url('http://1.bp.blogspot.com/-vATvea2AsJI/UfuoN1JO4lI/AAAAAAAAAI8/nGWNwz14Tk4/s1600/mafia+2+-+before+shooting.jpg');
-}
-.img20{
-    background-image:url('http://www.brandongamer.com/archives/mafia/img/extracted/mission-screen-ja-11.jpg');
-}
-.img-preview5{
-    background-image:url('http://www.ggamestorrents.com/wp-content/uploads/2017/12/Bully-Scholarship-Game-Free-Download.jpg')
-}
-.img21{
-     background-image:url('http://ps2media.ign.com/ps2/image/article/725/725593/bully-20060814062422861.jpg');
-}
-.img22{
-    background-image:url('https://i.neoseeker.com/p/Games/PC/Action/Adventure/bully_scholarship_edition_image2.jpg');
-}
-.img23{
-    background-image:url('https://www.hookedgamers.com/images/3220/bully/screenshot_pc_bully011.jpg');
-}
-.img24{
-    background-image:url('https://i.neoseeker.com/p/Games/PC/Action/Adventure/bully_scholarship_edition_image9.jpg');
-}
-.img25{
-    background-image:url('https://i.pinimg.com/originals/44/38/c1/4438c1066cfd413f686d160bb8d4d211.jpg');
-}
-
-.icon:hover{
-    background: black!important;
-    border:0.5px solid black!important;
-}
-
-.style{
-    background: lightgray;
-}
-
 .menu{
     width: 36%;
     float:left;
@@ -491,28 +407,10 @@ video{
     transition:0.6s;
 }
 
-.info-s{
-    text-decoration:none;
-    color: greenyellow;
-}
-
-.info-s:hover{
-    color:green;
-    transition:0.4s;
-    text-decoration:underline;
-}
-
 .menu hr{
     padding:0px;
     margin:0px;
 }
-
-.info{
-    margin-bottom:20px;
-    margin-top:20px;
-    font-size:20px;
-}
-
 .pod-menu{
     font-size:23px;
     padding-left:7px;
@@ -546,14 +444,20 @@ video{
     margin:auto;
     padding-top:20px;
     margin-top:25px;
+    font-family: sans-serif;
 }
 
 
 .text-end{
-    margin-top:25px;
-    font-size:17px;
+    font-size:20px;
     text-align:right;
     margin-right:5px;
+    width: 600px;
+    display: inline-block;
+    float:right;
+}
+.text-end a{
+    color:black;
 }
 
 .header1{
@@ -562,21 +466,12 @@ color:black;
 
 }
 
-
-.BGI-Project{
-    cursor:pointer;
-    margin-right:5px;
-}
-
-.BGI-Project:hover{
-   border:1px solid;
-    transition:0.5s;
-}
-
 footer{
     background-color: rgba(243, 245, 238, 0.51);
-    position: relative;
     margin-top:342px;
+    height: 70px;
+    border-top:1px solid;
+    border-bottom:1px solid;
 }
 
 body{
@@ -647,12 +542,10 @@ body *::selection {
     background-color: gold;
     color: #38335d;
 }
+
 @media screen and (max-width: 1045px) and (min-width:991px){
     .close_div{
         top:730px;
-    }
-    .slider{
-        width: 600px;
     }
     .download-content{
         width: 100%;
@@ -669,6 +562,7 @@ body *::selection {
         text-align:center;
         margin:auto;
         min-height: 250px;
+        background: rgba(85, 83, 83, 0.3);
     }
     .pod-menu{
         font-size: 45px;
@@ -686,23 +580,15 @@ body *::selection {
         margin-top:15px;
         margin-bottom:25px;
     }
-    .download,
-    .codes{
+    .download{
         font-size:55px;
         padding-left:35px;
         padding-right:65px;
         margin-top:35px;
         margin-right:0px;
     }
-    .text-end{
-        font-size:35px;
-    }
     .BGI-Project{
         height: 80px;
-    }
-    .icon{
-        width: 50px;
-        height: 50px;
     }
     .sa-download{
         font-size:45px;
@@ -722,9 +608,6 @@ body *::selection {
         margin-top:25px;
         margin-bottom:25px;
         margin-left: 750px;
-    }
-    .info{
-        font-size:30px;
     }
     .logo{
         font-size: 120px;
@@ -760,9 +643,6 @@ body *::selection {
     section h1{
         font-size:35px;
     }
-    .link{
-        font-size:45px;
-    }
     .table{
         margin-bottom:50px;
     }
@@ -770,14 +650,10 @@ body *::selection {
         font-size:40px;
     }
     .contentX iframe{
-        width: 100%;
+        width: 90%;
         height: 600px;
-        margin-left:0;
+        margin:5%;
     } 
-    .slider{
-        width: 100%;
-        height: 600px;
-    }
     .butt{
         font-size:55px;
         width: 550px;
@@ -787,58 +663,52 @@ body *::selection {
     .download-content{
         width: 950px;
     }
-    .icons{
-        width: 500px;
-    }
     .close{
         display: none;
     }
     .menu-btn{
-        width: 120px;
-        height: 120px;
+        display:none;
     }
-    .menu-btn span,
-    .menu-btn span::before,
-    .menu-btn span::after {
-        width: 55px;
-        top: 50%; margin-top: -1px;
-        left: 50%; margin-left: -27px;
-        height: 3px;
-    }
-    .menu-btn span::before{
-        transform: translateY(-16px);
-    }
-    .menu-btn span::after{
-        transform: translateY(14px);
-    }
-    .menu-btn_active span::before,
-    .menu-btn_active span::after{
-        width: 30px;
-    }
-    .menu-btn_active span::before{
-        transform:rotate(-17deg);
-    }
-    .menu-btn_active span::after{
-        transform: rotate(14deg);
-    }   
-    .link2{
-        padding-right: 45px;
-    }
-    .men-nav{
-        height: 100px;
-    }
-    .men-nav a{
-        margin-right: 0px;
-        font-size:30px;
+    .information{
+        display:block;
     }
     .pod-menu:hover{
-    background:#9b9b9b!important;
-    transition:0.3s;
+        background:#9b9b9b!important;
+        transition:0.3s;
     }
-    .spn-inf{
-    font-size: 50px;
+    .download{
+        padding:10px;
     }
-    .goIn{
+    .menu-footer{
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .text-end{
         font-size: 40px;
+        width: 100%;
+    }
+    .podmenu-footer{
+        font-size: 45px;
+        display: inline-block;
+        margin-left: 50px;
+    }
+    footer{
+        height: 180px;
+    }
+    .block{
+        height: 600px;
+        width: 400px;
+        margin-right:0;
+    }
+    .block h2{
+        font-size:55px;
+        margin-top:150px;
+    }
+    .block img{
+        width: 220px;
+    }
+    .programs{
+          
     }
 }
