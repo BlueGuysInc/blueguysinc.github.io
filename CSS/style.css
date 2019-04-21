@@ -9,7 +9,7 @@
 .podmenu-footer:hover{
     color:rgb(119, 118, 118);
 }
-.Information{
+.information{
     display:none;
 }
 .menu-footer{
@@ -669,7 +669,7 @@ body *::selection {
     .menu-btn{
         display:none;
     }
-    .Information{
+    .information{
         display:block;
     }
     .pod-menu:hover{

@@ -17,36 +17,36 @@
         <a href="programs.html" class="button buttons2 place">Программы</a>
     </div>
     <section id="programs">
-        <a href="https://vsetop.org/torrent/1216/Adobe_Photoshop_CC_2017.torrent" download class="block">
+        <a href="#" id="info1" class="block">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="">
             <h2>Photoshop</h2>
         </a>
-        <a href="http://d.vsetop.org/download/0918/CCleaner_v5.46.6652_Pro.rar" download class="block">
+        <a href="#" id="info2" class="block">
             <img src="https://img.comss.net/fit-in/200x200/filters:fill(FFFFFF)/logo/ccleaner_logo.png" alt="">
             <h2>CCleaner</h2>
         </a>
-        <a href="http://d.vsetop.org/download/0118/UltraISO_Premium_Edition_v9.7.1.3519.rar" download class="block">
+        <a href="#" id="info3" class="block">
             <img src="http://softcatalog.info/sites/default/files/styles/program_logo/public/program/logo/ultraiso_.png" alt="">
             <h2>UltraISO</h2>
         </a>   
         
-        <a href="https://notepad-plus-plus.org/repository/7.x/7.6.3/npp.7.6.3.bin.x64.zip" download class="block">
+        <a href="#" id="info4" class="block">
             <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Notepad_plus_plus.png" width="120" alt="">
             <h2>Notepad++</h2>
         </a>    
-        <a href="https://download.mozilla.org/?product=firefox-devedition-stub&os=win&lang=ru" download class="block">
+        <a href="#" id="info5" class="block">
             <img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/09/aurora_1024x1024x32-250x250.png" alt="">
             <h2>Firefox Developer Edition</h2>
         </a> 
-        <a href="https://yadi.sk/d/PAjaThAyr3aNUQ" download class="block">
+        <a href="#" id="info6" class="block">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/1200px-Visual_Studio_Code_1.18_icon.svg.png" width="120" alt="">
             <h2>Microsoft Visual Studio Code</h2>
         </a>
-        <a href="http://download.cpuid.com/cpu-z/cpu-z_1.87-en.exe" download class="block">
+        <a href="#" id="info7" class="block">
             <img src="http://sarovcomp.ru/wp-content/uploads/2017/02/CPU-Z.png" alt="">
             <h2>CPU-Z</h2>
         </a>
-        <a href="https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC" download class="block">
+        <a href="#" id="info8" class="block">
             <img src="http://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png" alt="">
             <h2>IntelliJ IDEA</h2>
         </a>
@@ -54,7 +54,7 @@
     <div class="men">
         <nav class="men-nav">
           <a href="https://vk.com/blueguysinc" target="_blank" class="link2">Группа Вконтакте</a>         
-          <a href="vk.com/vietnam_corp" target="_blank" class="link2">Vietnam</a>
+          <a href="https://vk.com/vietnam_corp" target="_blank" class="link2">Vietnam</a>
           <a href="https://tvoyotec.github.io/index.html" target="_blank" class="link2">Blue Guys Phone Manager</a>
         </nav>
          <div class="section">
@@ -63,6 +63,8 @@
   </a>
 </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     $('.menu-btn').on('click', function(e) {
@@ -74,10 +76,132 @@ var preloader = document.getElementById("loading");
 function Load_screen(){
     preloader.style.display = 'none';
 };
+var info1 = document.getElementById('info1');
+var info2 = document.getElementById('info2');
+var info3 = document.getElementById('info3');
+var info4 = document.getElementById('info4');
+var info5 = document.getElementById('info5');
+var info6 = document.getElementById('info6');
+var info7 = document.getElementById('info7');
+var info8 = document.getElementById('info8');
+info1.addEventListener('click', function() {
+    Swal.fire({
+        title: 'Adobe Photoshop CC',
+        showCloseButton: true,
+        showConfirmButton: false,
+        imageUrl: 
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png',
+        html:
+            '<p>Версия: 2019 20.0.4.26077</p>' +
+            '<p>Программа платная</p>' +
+            '<a href="https://www.adobe.com/ru/products/photoshop.html?gclid=CjwKCAjwqfDlBRBDEiwAigXUaPKc-pQXCkLlDbYGBEMLd_SKn5nNHy0z-m31IdYidzKl4xsJZ-ZQmxoCfL8QAvD_BwE&sdid=8DN85NTS&mv=search&skwcid=AL!3085!3!341241199382!e!!g!!adobe%20photoshop&ef_id=CjwKCAjwqfDlBRBDEiwAigXUaPKc-pQXCkLlDbYGBEMLd_SKn5nNHy0z-m31IdYidzKl4xsJZ-ZQmxoCfL8QAvD_BwE:G:s&s_kwcid=AL!3085!3!341241199382!e!!g!!adobe%20photoshop"type="button" class="swal2-confirm swal2-styled my-style" style="display: inline-block; border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);" aria-label="">Официальный сайт</a>' +  
+            '<a href="magnet:?xt=urn:btih:C5AB757B1E03FEF3A0AF60FCE7B5B66492027E0B" type="button" class="swal2-confirm swal2-styled my-style" style="display: inline-block; border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);" aria-label="">Скачать torrent</a>',
+            imageHeight: 350,
+    })
+})
+info2.addEventListener('click', function() {
+    Swal.fire({
+        title: 'CCleaner',
+        showCloseButton: true,
+        showConfirmButton: false,
+        imageUrl: 
+            'https://img.comss.net/fit-in/200x200/filters:fill(FFFFFF)/logo/ccleaner_logo.png',
+        html:
+            '<p>Версия: 5.39</p>' +
+            '<p>Программа бесплатная</p>' +
+            '<a href="https://soft-shop.su/downloads/ccleaner-professional-5-32?utm_source=adwords&utm_campaign=905843020&utm_term=ccleaner&domain=&gclid=CjwKCAjwqfDlBRBDEiwAigXUaKS5lQUKLxvF0lNbJxM3NfP-uOv1eU0pi8Qdn9DB60TneAOsA_PpUhoCthsQAvD_BwE"type="button" class="swal2-confirm swal2-styled my-style" style="display: inline-block; border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);" aria-label="">Официальный сайт</a>',
+            imageHeight: 350,
+    })
+})  
+info3.addEventListener('click', function() {
+    Swal.fire({
+        title: 'UltraISO',
+        showCloseButton: true,
+        showConfirmButton: false,
+        imageUrl: 
+            'http://softcatalog.info/sites/default/files/styles/program_logo/public/program/logo/ultraiso_.png',
+        html:
+            '<p>Версия: 9.7.1.3519</p>' +
+            '<p>Программа платная</p>' +
+            '<a href="https://allrusoft.ru/sistema/ultraiso?utm_source=google&utm_term=ultraiso&gclid=CjwKCAjwqfDlBRBDEiwAigXUaJSj0WnVe96H72tRc9g1gk5CPT_EWrFlXh0_DleboUj9FbKAdrRLihoCiEcQAvD_BwE"type="button" class="swal2-confirm swal2-styled my-style" style="display: inline-block; border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);" aria-label="">Официальный сайт</a>' +            
+            '<a href="https://www.upload.ee/download/9407914/266d9fba22ad15432e51/UltraISO.v9.7.1.3519.zip" type="button" class="swal2-confirm swal2-styled my-style" style="display: inline-block; border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);" aria-label="">Скачать zip</a>',
+            imageHeight: 350,
+    })
+})         
+info4.addEventListener('click', function() {
+    Swal.fire({
+        title: 'Notepad++',
+        showCloseButton: true,
+        showConfirmButton: false,
+        imageUrl: 
+            'https://upload.wikimedia.org/wikipedia/commons/f/f5/Notepad_plus_plus.png',
+        html:
+            '<p>Версия: 7.6.6</p>' +
+            '<p>Программа бесплатная</p>' +
+            '<a href="https://notepad-plus-plus.org/download/v7.6.6.html"type="button" class="swal2-confirm swal2-styled my-style" style="display: inline-block; border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);" aria-label="">Официальный сайт</a>',
+            imageHeight: 350,
+    })
+})   
+info5.addEventListener('click', function() {
+    Swal.fire({
+        title: 'Firefox Quantum: Developer Edition',
+        showCloseButton: true,
+        showConfirmButton: false,
+        imageUrl: 
+            'https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/09/aurora_1024x1024x32-250x250.png',
+        html:
+            '<p>Версия: 67.0b12</p>' +
+            '<p>Программа бесплатная</p>' +
+            '<a href="https://www.mozilla.org/ru/firefox/developer/"type="button" class="swal2-confirm swal2-styled my-style" style="display: inline-block; border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);" aria-label="">Официальный сайт</a>',
+            imageHeight: 350,
+    })
+})
+info6.addEventListener('click', function() {
+    Swal.fire({
+        title: 'Microsoft Visual Studio Code',
+        showCloseButton: true,
+        showConfirmButton: false,
+        imageUrl: 
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/1200px-Visual_Studio_Code_1.18_icon.svg.png',
+        html:
+            '<p>Версия: 1.33</p>' +
+            '<p>Программа бесплатная</p>' +
+            '<a href="https://code.visualstudio.com/"type="button" class="swal2-confirm swal2-styled my-style" style="display: inline-block; border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);" aria-label="">Официальный сайт</a>',
+            imageHeight: 350,
+    })
+})
+info7.addEventListener('click', function() {
+    Swal.fire({
+        title: 'CPU-Z',
+        showCloseButton: true,
+        showConfirmButton: false,
+        imageUrl: 
+            'http://sarovcomp.ru/wp-content/uploads/2017/02/CPU-Z.png',
+        html:
+            '<p>Версия: 1.51</p>' +
+            '<p>Программа бесплатная</p>' +
+            '<a href="https://www.cpuid.com/softwares/cpu-z.html"type="button" class="swal2-confirm swal2-styled my-style" style="display: inline-block; border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);" aria-label="">Официальный сайт</a>',
+            imageHeight: 350,
+    })
+})
+info8.addEventListener('click', function() {
+    Swal.fire({
+        title: 'intellij idea',
+        showCloseButton: true,
+        showConfirmButton: false,
+        imageUrl: 
+            'http://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png',
+        html:
+            '<p>Версия: 2019.1.1</p>' +
+            '<p>Программа бесплатная</p>' +
+            '<a href="https://www.jetbrains.com/idea/"type="button" class="swal2-confirm swal2-styled my-style" style="display: inline-block; border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);" aria-label="">Официальный сайт</a>',
+            imageHeight: 350,
+    })
+})
 </script>
 </main>
 <footer>
-    <p class="menu-footer"><a href="index.html" class="podmenu-footer">Игры</a><a href="programs.html" class="podmenu-footer"> Программы</a><a href="Information.html" class="podmenu-footer Information">Информация</a></p>
+    <p class="menu-footer"><a href="index.html" class="podmenu-footer">Игры</a><a href="programs.html" class="podmenu-footer"> Программы</a><a href="information.html" class="podmenu-footer information">Информация</a></p>
     <p class="text-end">Сайт создан компанией <a href="https://vk.com/vietnam_corp">Vietnam</a></p>
 </footer>
 </body>
